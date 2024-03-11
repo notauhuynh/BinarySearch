@@ -60,17 +60,7 @@ public int binarySearch(int catNumToFind)
 }
 public int recursiveBinarySearch(int catNumToFind, int nLow, int nHigh)
 {
-   if(nLow > nHigh){
-    return -1;
-  }
-  int guess = (nHigh + nLow)/2;
-   if(store[guess].getCatNum() == catNumToFind){
-    return store[guess].getInventory();
-  } else if(store[guess].getCatNum() < catNumToFind){
-    return recursiveBinarySearch(catNumToFind, guess + 1, nHigh);
-  } else{
-    return recursiveBinarySearch(catNumToFind, nLow, guess -1);
-  }
+//temp
 }
 public void setup()
 {
